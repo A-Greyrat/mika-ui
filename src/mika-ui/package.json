@@ -1,0 +1,8 @@
+{
+  "name": "mika-ui",
+  "version": "1.0.1",
+  "description": "a simple ui library",
+  "main": "index.js",
+  "author": "natsume-shiki",
+  "types": "./index.d.ts"
+}
