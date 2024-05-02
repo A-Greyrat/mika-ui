@@ -3,5 +3,5 @@
 ## Install
 
 ```bash
-npm install mika-ui
+npm install @natsume_shiki/mika-ui
 ```

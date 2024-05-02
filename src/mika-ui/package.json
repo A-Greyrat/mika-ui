@@ -1,8 +1,12 @@
 {
-  "name": "mika-ui",
+  "name": "@natsume_shiki/mika-ui",
   "version": "1.0.1",
   "description": "a simple ui library",
-  "main": "index.js",
-  "author": "natsume-shiki",
-  "types": "./index.d.ts"
+  "main": "./dist/index.js",
+  "author": "natsume_shiki",
+  "types": "./dist/index.d.ts",
+  "license": "MIT",
+  "files": [
+    "dist"
+  ]
 }
