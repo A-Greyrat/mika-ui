@@ -1,3 +1,5 @@
+import React from "react";
+
 export type PaginationCustomButtonProps = {
     onClick: () => void;
     disabled: boolean;
@@ -16,5 +18,4 @@ export interface PaginationProps {
     style?: React.CSSProperties;
 }
 
-declare const Pagination: React.FC<PaginationProps>;
-export default Pagination;
+export declare const Pagination: React.FC<PaginationProps>;

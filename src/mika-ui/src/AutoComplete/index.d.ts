@@ -1,3 +1,5 @@
+import React, {ReactNode} from "react";
+
 export interface AutoCompleteProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size' | 'onSubmit'> {
     type?: 'outline' | 'filled' | 'borderless';
     size?: 'small' | 'medium' | 'large';
@@ -11,5 +13,4 @@ export interface AutoCompleteProps extends Omit<React.InputHTMLAttributes<HTMLIn
     onOptionKeyDown?: (item: string) => void;
 }
 
-declare const AutoComplete: React.FC<AutoCompleteProps>;
-export default AutoComplete;
+export declare const AutoComplete: React.FC<AutoCompleteProps>;

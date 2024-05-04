@@ -1,3 +1,5 @@
+import React from "react";
+
 export type TabListProps = {
     items: string[];
     activeIndex: number;
@@ -8,5 +10,4 @@ export type TabListProps = {
     style?: React.CSSProperties;
 };
 
-declare const TabList: React.FC<TabListProps>;
-export default TabList;
+export declare const TabList: React.FC<TabListProps>;

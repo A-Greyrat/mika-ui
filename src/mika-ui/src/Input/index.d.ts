@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size' | 'type' | 'onSubmit'> {
     type?: 'outline' | 'filled' | 'borderless';
     size?: 'small' | 'medium' | 'large';
@@ -6,5 +8,4 @@ export interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElem
     children?: React.ReactNode;
 }
 
-declare const Input: React.FC<InputProps>;
-export default Input;
+export declare const Input: React.FC<InputProps>;

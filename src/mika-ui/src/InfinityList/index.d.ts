@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface InfinityListProps extends React.HTMLAttributes<HTMLDivElement> {
     children: React.ReactNode;
     onIntersect: (unloading: () => void) => unknown;
@@ -9,5 +11,4 @@ export interface InfinityListProps extends React.HTMLAttributes<HTMLDivElement> 
     options?: IntersectionObserverInit;
 }
 
-declare const InfinityList: React.FC<InfinityListProps>;
-export default InfinityList;
+export declare const InfinityList: React.FC<InfinityListProps>;

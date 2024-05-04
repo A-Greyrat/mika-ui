@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface MessageProps extends React.HTMLAttributes<HTMLDivElement> {
     children?: React.ReactNode;
     duration?: string;
@@ -7,5 +9,4 @@ export interface MessageProps extends React.HTMLAttributes<HTMLDivElement> {
     className?: string;
 }
 
-declare const showMessage: (props: MessageProps) => void;
-export default showMessage;
+export declare const showMessage: (props: MessageProps) => void;

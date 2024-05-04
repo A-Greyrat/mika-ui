@@ -1,6 +1,6 @@
 import {ConfigProps} from "./ConfigType.ts";
+import React from "react";
 
 export * from './ConfigType';
 
-declare const Config: React.FC<ConfigProps>;
-export default Config;
+export declare const Config: React.FC<ConfigProps>;

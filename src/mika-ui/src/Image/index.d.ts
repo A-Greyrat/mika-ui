@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface ImageProps extends React.HTMLAttributes<HTMLImageElement> {
     src?: string | null;
 
@@ -17,5 +19,5 @@ export interface ImageProps extends React.HTMLAttributes<HTMLImageElement> {
     occupyStyle?: React.CSSProperties;
 }
 
-declare const Image: React.FC<ImageProps>;
-export default Image;
+export declare const Image: React.FC<ImageProps>;
+

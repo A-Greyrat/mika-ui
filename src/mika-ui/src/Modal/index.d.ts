@@ -1,3 +1,5 @@
+import React from "react";
+
 export type ModalController = {
     // 仅执行关闭动画，不执行onClose
     close: () => void;

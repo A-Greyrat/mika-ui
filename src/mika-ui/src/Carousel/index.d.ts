@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface CarouselProps extends React.HTMLAttributes<HTMLDivElement> {
     items: ReactElement[];
 
@@ -10,5 +12,4 @@ export interface CarouselProps extends React.HTMLAttributes<HTMLDivElement> {
     className?: string;
 }
 
-declare const Carousel: React.FC<CarouselProps>;
-export default Carousel;
+export declare const Carousel: React.FC<CarouselProps>;

@@ -32,7 +32,7 @@ export default [{
             inject: true,
         }),
     ],
-    external: ['react', 'react-dom', 'lottie-web'],
+    external: ['react', 'react-dom'],
 }, {
     input: './src/index.d.ts',
     output: {file: 'dist/index.d.ts', format: 'es'},

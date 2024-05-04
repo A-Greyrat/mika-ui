@@ -1,3 +1,4 @@
+import React from "react";
 
 interface SkeletonProps extends React.HTMLAttributes<HTMLDivElement> {
     width?: string;
@@ -9,5 +10,5 @@ interface SkeletonProps extends React.HTMLAttributes<HTMLDivElement> {
     loading?: boolean;
 }
 
-declare const Skeleton: React.FC<SkeletonProps>;
-export default Skeleton;
+export declare const Skeleton: React.FC<SkeletonProps>;
+

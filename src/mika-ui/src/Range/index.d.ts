@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface RangeProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {
     value: number;
     orient?: 'horizontal' | 'vertical';
@@ -13,5 +15,4 @@ export interface RangeProps extends Omit<React.HTMLAttributes<HTMLDivElement>, '
     className?: string;
 }
 
-declare const Range: React.FC<RangeProps>;
-export default Range;
+export declare const Range: React.FC<RangeProps>;

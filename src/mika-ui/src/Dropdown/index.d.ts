@@ -1,3 +1,5 @@
+import React from "react";
+
 export type DropdownProps = {
     children: React.ReactNode;
     menu: React.ReactNode;
@@ -9,5 +11,4 @@ export type DropdownProps = {
     callback?: () => void;
 }
 
-declare const Dropdown: React.FC<DropdownProps>;
-export default Dropdown;
+export declare const Dropdown: React.FC<DropdownProps>;

@@ -1,3 +1,5 @@
+import React from "react";
+
 export interface SliderProps extends React.InputHTMLAttributes<HTMLInputElement> {
     showValue?: boolean;
     width?: string;
@@ -8,5 +10,4 @@ export interface SliderProps extends React.InputHTMLAttributes<HTMLInputElement>
     trackColor?: string;
 }
 
-declare const Slider: React.FC<SliderProps>;
-export default Slider;
+export declare const Slider: React.FC<SliderProps>;
