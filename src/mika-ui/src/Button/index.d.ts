@@ -8,5 +8,4 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
     onClick?: (e: React.MouseEvent<HTMLButtonElement>) => unknown;
 }
 
-declare const Button: React.FC<ButtonProps>;
-export default Button;
+export declare const Button: React.FC<ButtonProps>;
