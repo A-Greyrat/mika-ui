@@ -160,6 +160,7 @@ const Image = memo(React.forwardRef((props: ImageProps, ref: React.Ref<HTMLImage
         error,
         onLoaded,
         onError,
+        style,
         lazy,
         height,
         width,
@@ -176,19 +177,19 @@ const Image = memo(React.forwardRef((props: ImageProps, ref: React.Ref<HTMLImage
 
     useImperativeHandle(ref, () => elementRef.current!, [elementRef]);
     if (_loading) {
-        return (<>{loading ?? <DefaultLoading ref={elementRef} width={width} height={height} occupyStyle={occupyStyle}/>}</>);
+        return (<>{loading ?? <DefaultLoading ref={elementRef} width={width} style={style} height={height} occupyStyle={occupyStyle}/>}</>);
     }
 
     if (_error) {
         if (typeof error === 'string') {
-            return <img src={error} alt={alt} ref={elementRef} width={width} height={height} {...rest} />;
+            return <img src={error} alt={alt} ref={elementRef} width={width} style={style}  height={height} {...rest} />;
         }
 
-        return (<>{error ?? <DefaultError ref={elementRef} width={width} height={height} occupyStyle={occupyStyle}/>}</>);
+        return (<>{error ?? <DefaultError ref={elementRef} width={width} style={style}  height={height} occupyStyle={occupyStyle}/>}</>);
     }
 
     return (
-        <img src={_src} alt={alt} ref={elementRef} width={width} height={height} {...rest} />
+        <img src={_src} alt={alt} ref={elementRef} width={width} height={height} style={style} {...rest} />
     );
 }), (prev, next) => {
     return prev.src === next.src
