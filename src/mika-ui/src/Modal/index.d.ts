@@ -1,4 +1,4 @@
-import React from "react";
+import React, {ForwardRefExoticComponent} from "react";
 
 export type ModalController = {
     // 仅执行关闭动画，不执行onClose
@@ -23,9 +23,11 @@ export type ModalProps = {
     position?: "top" | "center" | "bottom";
 }
 
-declare const Modal: React.FC<ModalProps>;
+declare const Modal: ForwardRefExoticComponent<ModalProps & React.RefAttributes<HTMLDivElement>>;
 export default Modal;
 
-export declare const showModal: (props: Omit<Omit<ModalProps, "visible">, "onClose"> & { onClose?: () => unknown }) => void;
+export declare const showModal: (props: Omit<Omit<ModalProps, "visible">, "onClose"> & {
+    onClose?: () => unknown
+}) => void;
 export declare const useModal: () => ModalController;
 

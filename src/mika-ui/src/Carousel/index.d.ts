@@ -1,4 +1,4 @@
-import React from "react";
+import React, {ForwardRefExoticComponent} from "react";
 
 export interface CarouselProps extends React.HTMLAttributes<HTMLDivElement> {
     items: ReactElement[];
@@ -12,4 +12,4 @@ export interface CarouselProps extends React.HTMLAttributes<HTMLDivElement> {
     className?: string;
 }
 
-export declare const Carousel: React.FC<CarouselProps>;
+export declare const Carousel: ForwardRefExoticComponent<CarouselProps & React.RefAttributes<HTMLDivElement>>;

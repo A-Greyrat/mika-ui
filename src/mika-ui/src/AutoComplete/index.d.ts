@@ -1,4 +1,4 @@
-import React, {ReactNode} from "react";
+import React, {ForwardRefExoticComponent, ReactNode} from "react";
 
 export interface AutoCompleteProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size' | 'onSubmit'> {
     type?: 'outline' | 'filled' | 'borderless';
@@ -13,4 +13,4 @@ export interface AutoCompleteProps extends Omit<React.InputHTMLAttributes<HTMLIn
     onOptionKeyDown?: (item: string) => void;
 }
 
-export declare const AutoComplete: React.FC<AutoCompleteProps>;
+export declare const AutoComplete: ForwardRefExoticComponent<AutoCompleteProps & React.RefAttributes<HTMLInputElement>>;

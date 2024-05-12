@@ -1,4 +1,4 @@
-import React from "react";
+import React, {ForwardRefExoticComponent} from "react";
 
 export interface SliderProps extends React.InputHTMLAttributes<HTMLInputElement> {
     showValue?: boolean;
@@ -10,4 +10,4 @@ export interface SliderProps extends React.InputHTMLAttributes<HTMLInputElement>
     trackColor?: string;
 }
 
-export declare const Slider: React.FC<SliderProps>;
+export declare const Slider: ForwardRefExoticComponent<SliderProps & React.RefAttributes<HTMLInputElement>>;

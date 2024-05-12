@@ -1,4 +1,4 @@
-import React from "react";
+import React, {ForwardRefExoticComponent} from "react";
 
 export type PaginationCustomButtonProps = {
     onClick: () => void;
@@ -18,4 +18,4 @@ export interface PaginationProps {
     style?: React.CSSProperties;
 }
 
-export declare const Pagination: React.FC<PaginationProps>;
+export declare const Pagination: ForwardRefExoticComponent<PaginationProps & React.RefAttributes<HTMLDivElement>>;

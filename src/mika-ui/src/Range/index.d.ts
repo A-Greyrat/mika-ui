@@ -1,4 +1,4 @@
-import React from "react";
+import React, {ForwardRefExoticComponent} from "react";
 
 export interface RangeProps extends Omit<React.HTMLAttributes<HTMLDivElement>, 'onChange'> {
     value: number;
@@ -15,4 +15,4 @@ export interface RangeProps extends Omit<React.HTMLAttributes<HTMLDivElement>, '
     className?: string;
 }
 
-export declare const Range: React.FC<RangeProps>;
+export declare const Range: ForwardRefExoticComponent<RangeProps & React.RefAttributes<HTMLDivElement>>;

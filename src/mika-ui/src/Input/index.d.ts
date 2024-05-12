@@ -1,4 +1,4 @@
-import React from "react";
+import React, {ForwardRefExoticComponent} from "react";
 
 export interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElement>, 'size' | 'type' | 'onSubmit'> {
     type?: 'outline' | 'filled' | 'borderless';
@@ -8,4 +8,4 @@ export interface InputProps extends Omit<React.InputHTMLAttributes<HTMLInputElem
     children?: React.ReactNode;
 }
 
-export declare const Input: React.FC<InputProps>;
+export declare const Input: ForwardRefExoticComponent<InputProps & React.RefAttributes<HTMLInputElement>>;

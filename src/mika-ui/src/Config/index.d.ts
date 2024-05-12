@@ -1,6 +1,6 @@
 import {ConfigProps} from "./ConfigType.ts";
-import React from "react";
+import React, {ForwardRefExoticComponent} from "react";
 
 export * from './ConfigType';
 
-export declare const Config: React.FC<ConfigProps>;
+export declare const Config: ForwardRefExoticComponent<ConfigProps & React.RefAttributes<HTMLDivElement>>;

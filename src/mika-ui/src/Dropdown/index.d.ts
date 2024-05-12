@@ -1,4 +1,4 @@
-import React from "react";
+import React, {ForwardRefExoticComponent} from "react";
 
 export type DropdownProps = {
     children: React.ReactNode;
@@ -11,4 +11,4 @@ export type DropdownProps = {
     callback?: () => void;
 }
 
-export declare const Dropdown: React.FC<DropdownProps>;
+export declare const Dropdown: ForwardRefExoticComponent<DropdownProps & React.RefAttributes<HTMLDivElement>>;

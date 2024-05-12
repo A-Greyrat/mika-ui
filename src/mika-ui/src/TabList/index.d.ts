@@ -1,4 +1,4 @@
-import React from "react";
+import React, {ForwardRefExoticComponent} from "react";
 
 export type TabListProps = {
     items: string[];
@@ -10,4 +10,4 @@ export type TabListProps = {
     style?: React.CSSProperties;
 };
 
-export declare const TabList: React.FC<TabListProps>;
+export declare const TabList: ForwardRefExoticComponent<TabListProps & React.RefAttributes<HTMLDivElement>>;

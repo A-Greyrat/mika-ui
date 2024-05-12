@@ -1,4 +1,4 @@
-import React from "react";
+import React, {ForwardRefExoticComponent} from "react";
 
 export interface ImageProps extends React.HTMLAttributes<HTMLImageElement> {
     src?: string | null;
@@ -19,5 +19,5 @@ export interface ImageProps extends React.HTMLAttributes<HTMLImageElement> {
     occupyStyle?: React.CSSProperties;
 }
 
-export declare const Image: React.FC<ImageProps>;
+export declare const Image: ForwardRefExoticComponent<ImageProps & React.RefAttributes<HTMLImageElement>>;
 
